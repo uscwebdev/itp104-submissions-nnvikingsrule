@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>General Information Form</title>
+
+    <style>
+
+h1{
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    margin: 10px 5px;
+}
+
+.left-col{
+    margin: 3px 5px;
+}
+#phone {
+    width: 40px;
+}
+
+#ss {
+    width: 40px;
+}
+#ss2 {
+    width: 30px;
+}
+
+    </style>
+    </head>
+<body>
+    <div>
+        <h1>General Information Form</h1>
+    </div>
+
+    <form action="confirmation.html">
+
+        <div class="form">
+            <div class="left-col">
+                <label for="fn">First Name:</label>
+                  </div>
+                <input type="text" id="fn" placeholder="Tommy">
+        </div>
+
+        <div class="form">
+            <div class="left-col">
+                <label for="ln">Last Name:</label>
+                  </div>
+                <input type="text" id="ln" placeholder="Trojan">
+        </div>
+
+        <div class="form">
+			<div class="left-col">
+			<label for="email">Email Address:</label>
+			</div>
+			<input type="email" id="email" placeholder="ttrojan@usc.edu">
+		</div>
+        <div class="form">
+			<div class="left-col">
+			<label for="sdl">State/Drivers License #</label>
+			</div>
+			<input type="sdl" id="sdl" placeholder="# varies by state">
+		</div>
+
+        <div class="form">
+			<div class="left-col">
+			<label for="phone">Phone Number:</label>
+			</div>
+			<input type="text" id="phone" placeholder="808">
+            -
+            <input type="text" id="phone" placeholder="123">
+            -
+            <input type="text" id="phone" placeholder="4567">
+		</div>
+
+        <div class="form">
+			<div class="left-col">
+			<label for="ss">Social Security:</label>
+			</div>
+			<input type="text" id="ss" placeholder="123">
+            -
+            <input type="text" id="ss2" placeholder="45">
+            -
+            <input type="text" id="ss" placeholder="6789">
+		</div>
+
+
+        <div class="form">
+			<div class="left-col">
+			<label for="address">Street Address:</label>
+			</div>
+			<input type="text" id="address" placeholder="2734 Laniloa Rd">
+		</div>
+
+        <div class="form">
+            <div class="left-col">
+            <label for="state">State:</label>
+            </div>
+                <select id="state">
+                    <option>California</option>
+					<option>Texas</option>
+					<option>New York</option>
+					<option>Florida</option>
+					<option>Hawaii</option>
+					<option>Other...</option>
+                </select>	
+        </div>
+
+        <div class="form">
+			<div class="left-col">
+			<label for="zip">Zip Code:</label>
+			</div>
+			<input type="text" id="zip" placeholder="96813">
+		</div>
+
+
+
+        <div class="form">
+			<div class="left-col">
+			What sex are you?
+			</div>
+
+			<label>
+			<input type="radio" name="student">
+			Male
+			</label>
+
+			<label>
+			<input type="radio" name="student">
+			Female  
+			</label>
+
+            <label>
+                <input type="radio" name="student">
+                Other
+            </label>
+		</div>
+
+        <div class="form">
+			<div class="left-col">
+			Race:
+			</div>
+
+			<label>
+			<input type="checkbox">
+			White
+			</label>
+			
+			<label>
+			<input type="checkbox">
+			Asian
+			</label>
+			
+			<label>
+			<input type="checkbox">
+			Black
+			</label>
+            
+            <label>
+                <input type="checkbox">
+            Hispanic
+            </label>
+
+            <label>
+                <input type="checkbox">
+            Native American/Hawaiian
+            </label>
+
+            <label>
+                <input type="checkbox">
+            Other
+            </label>
+		</div>
+
+
+        <div class="form">
+                    <div class="left-col">
+                    <label for="msg">Questions/Concerns:</label>
+                    </div>
+                    <textarea id="msg" placeholder="Question 1...."></textarea>
+    
+        </div>
+
+        <div class="form">
+			<div class="left-col">
+			Results:
+			</div>
+
+			<label>
+			<input type="checkbox">
+			Sent to Email
+			</label>
+			
+			<label>
+			<input type="checkbox">
+			Sent to Phone#
+			</label>
+			
+			<label>
+			<input type="checkbox">
+			Sent by Mail
+			</label>
+		</div>
+
+
+        <div class="form">
+			<button type="submit">Submit</button>
+
+			<button type="reset">Clear</button>
+		</div>
+
+
+    </form>
+
+
+</body>
