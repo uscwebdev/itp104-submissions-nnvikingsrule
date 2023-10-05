@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minnesota Timberwolves</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+
+        #header {
+            height: 250px;
+            width: auto;
+            text-align: center;
+            line-height: 250px;
+            color: white;
+            background-image: url(img/Dunk\ Gallery/okogiedunk.jpg);
+            background-position: center;
+            background-size: cover;
+            margin-left: auto;
+            margin-right: auto;
+    
+        }
+
+        #nav a:hover, #nav #highlight2{
+            color:white;
+            border-bottom: 2px solid white;
+        }
+
+        #p1{
+            background-color: black;
+            height: 200px;
+            width: 243px;
+            border: 1px solid blue;
+            margin: 10px 5px 5px 5px;
+            overflow: hidden;  
+            position: relative;
+        }
+
+        #p1 > img {
+            width: auto;
+            height: 100%;
+        }
+
+        #p2{
+            background-color: black;
+            height: 200px;
+            width: 488px;
+            border: 1px solid blue;
+            margin: 10px 0px 5px 0px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #p2 > img {
+            width: 100%;
+            height: auto;
+        }
+
+        #p3{
+            background-color: black;
+            height: 200px;
+            width: 243px;
+            border: 1px solid blue;
+            margin: 10px 5px 5px 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #p3 > img {
+            width: auto;
+            height: 100%;
+            position: relative;
+            right: 25px;
+        }
+        
+        #p4{
+            background-color: black;
+            height: 200px;
+            width: 483px;
+            border: 1px solid blue;
+            margin: 5px 5px 5px 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #p4 > img {
+            width: 100%;
+            height: auto;
+        }
+        
+        #p5{
+            background-color: black;
+            height: 200px;
+            width: 483px;
+            border: 1px solid blue;
+            margin: 5px 10px 5px 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #p5 > img {
+            width: 100%;
+            height: auto;
+        }
+        
+        #p6{
+            background-color: black;
+            height: 500px;
+            width: 483px;
+            border: 1px solid blue;
+            margin: 5px 5px 0px 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #p6 > img {
+            width: auto;
+            height: 100%;
+            position: relative;
+            right: 250px;
+        }
+        
+        #p7{
+            background-color: black;
+            height: 240px;
+            width: 238px;
+            border: 1px solid blue;
+            margin: 5px 5px 5px 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #p7 > img {
+            width: auto;
+            height: 100%;
+            position: relative;
+            right:50px;
+
+        }
+        
+        #p8{
+            background-color: black;
+            height: 240px;
+            width: 238px;
+            border: 1px solid blue;
+            margin: 5px 5px 5px 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #p8 > img {
+            width: auto;
+            height: 100%;
+            position: relative;
+            right: 45px;
+        }
+        
+        #p9{
+            background-color: black;
+            height: 240px;
+            width: 238px;
+            border: 1px solid blue;
+            margin: 5px 5px 0px 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #p9 > img {
+            width: auto;
+            height: 100%;
+            position: relative;
+            right: 150px;
+        }
+        
+        #p10{
+            background-color: black;
+            height: 240px;
+            width: 238px;
+            border: 1px solid blue;
+            margin: 5px 5px 0px 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #p10 > img {
+            width: auto;
+            height: 100%;
+            position: relative;
+            right: 50px;
+        }
+
+
+        #gallery{
+            display: flex;
+            width:1000px;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        
+        .row{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+        }
+            
+
+        .minirow2{
+            display: flex;
+        }
+
+
+
+        .text{
+            position: absolute;
+            top:auto;
+            color: white;
+            background-color: rgba(0,0,0,0.6);
+            height: 100%;
+            width:100%;
+            text-align: center;
+            display: flex;
+			align-items: center;
+			justify-content: center;
+            visibility: hidden;
+            z-index: 1;
+        }
+
+
+        #p1:hover .text {
+                visibility:visible;
+        }
+        #p2:hover .text {
+                visibility:visible;
+        }
+        #p3:hover .text {
+                visibility:visible;
+        }
+        #p4:hover .text {
+                visibility:visible;
+        }
+        #p5:hover .text {
+                visibility:visible;
+        }
+        #p6:hover .text {
+                visibility:visible;
+        }
+        #p7:hover .text {
+                visibility:visible;
+        }
+        #p8:hover .text {
+                visibility:visible;
+        }
+        #p9:hover .text {
+                visibility:visible;
+        }
+        #p10:hover .text {
+                visibility:visible;
+        }
+
+
+        
+
+        
+ 
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="header">
+        <h1>Dunk Gallery</h1>
+    </div>
+
+    <div id="nav">
+            <ul id="menu">
+                <li><a id="highlight" href="assignment_06.html">Home</a>
+                    <ul id="submenu">
+                    <li><a href="assignment_06.html#Timberwolves!!!">Timberwolves!</a></li>
+                    <li><a href="assignment_06.html#History">History</a></li>
+                    <li><a href="assignment_06.html#CurrentTeam">Current Team</a></li>
+                    </ul>
+                </li>
+    
+                <li><a id="highlight2" href="gallery6.html">Dunk Gallery</a></li>
+            </ul>
+    
+    </div>
+
+    <div class="main">
+       
+        <div id="gallery">
+
+        <div class="row">
+            <div id="p1">
+                <div class="text">ANT Dunk</div>
+                <img src="img/DunkGallery/antdunk.jpg" alt="Anthony Edwards Dunk">
+
+                    
+            </div>
+            <div id="p2">
+                <div class="text">Culver Dunk</div>
+                <img src="img/DunkGallery/culverdunk.jpg" alt="Jarrett Culver Dunk">
+            </div>
+            <div id="p3">
+                <div class="text">Gobert Dunk</div>
+                <img src="img/DunkGallery/gobertdunk.png" alt="Rudy Gobert Dunk">
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="p4">
+                <div class="text">Jaden Dunk</div>
+                <img src="img/DunkGallery/jadendunk.jpg" alt="Jaden McDaniels Dunk">
+            </div>
+            <div id="p5">
+                <div class="text">Layman Dunk</div>
+                <img src="img/DunkGallery/jakedunk.png" alt="Jake Layman Dunk">
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="p6">
+                <div class="text">KAT Dunk</div>
+                <img src="img/DunkGallery/katdunk.jpg" alt="Karl-Anthony Towns Dunk">
+            </div>
+            <div class="minirow">
+                <div class="minirow2">
+                    <div id="p7">
+                        <div class="text">Garnett Dunk</div>
+                        <img src="img/DunkGallery/kgdunk.jpg" alt="Kevin Garnett Dunk">
+                    </div>
+                    <div id="p8">
+                        <div class="text">Love Dunk</div>
+                        <img src="img/DunkGallery/lovedunk.jpg" alt="Kevin Love Dunk">
+                    </div>
+                </div>
+                <div class="minirow2">
+                    <div id="p9">
+                        <div class="text">Naz Dunk</div>
+                        <img src="img/DunkGallery/nazdunk.jpg" alt="Naz Reid Dunk">
+                    </div>
+                    <div id="p10">
+                        <div class="text">Taj Dunk</div>
+                        <img src="img/DunkGallery/gibsondunk.jpg" alt="Taj Gibson Dunk">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+
+        </div>
+    </div>
+</body>
+</html>
