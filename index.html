@@ -2,65 +2,158 @@
 <html>
 <head>
 <title>Nikolai Nelson | Student Page.</title>
+
+<meta name="viewport" content="width=device-width, initial-scale-1">
+
 <style>
+
+    body{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     strong {
     background-color: blue;
     color: red;
     text-align: center;
     }
+
     img{
         width: auto;
         height: 200px;
     }
+#body1 {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#section1{
+    margin-right: 5px;
+   margin-left: 5px;
+}
 
+#section2 {
+    display: flex;
+    justify-content: left;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   margin-right: 5px;
+   margin-left: 5px;
+}
+
+#section3 {
+    margin-right: 5px;
+   margin-left: 5px;
+}
+
+#column1{
+    width: 450px;
+
+}
+#column2{
+    width: 450px;
+}
+#section3 {
+    display: flex;
+    justify-content: left
+}
+#column3 {
+    width: 450px;
+}
+#column4{
+    width: 450px;
+}
+
+@media (max-width:767px)
+{
+   
+    #section2 {
+        border: none;
+        flex-direction: column;
+        
+    }
+    #section3 {
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    #column1{
+        width: auto;
+
+    }
+    #column2{
+        width: auto;
+    }
+    #column3{
+        width: auto;
+    }
+    #column4{
+        width: auto;
+    }
+    #body1 {
+        width: auto;
+    }
+}
 </style>
 </head>
 <body>
+<div id="body1">
+    <div id="section1">
+        <p><h1>Nikolai Nelson</h1></p>
+        <a href="mailto:nikolain@usc.edu">nikolain@usc.edu</a>
+    </div>
+<div id="section2">
+    <div id="column1">
+        <p>Favorite Color: <strong>Blue</strong> </p>
 
-<p><h1>Nikolai Nelson</h1></p>
- <a href="mailto:nikolain@usc.edu">nikolain@usc.edu</a>
+        <P>Favorite Website:<a href="https://www.espn.com/">ESPN</a></P>
 
-<p>Favorite Color: <strong>Blue</strong> </p>
+        <p>Favorite Activity:</p>
+        <p> <img src="https://cdn.nba.com/teams/legacy/www.nba.com/timberwolves/sites/timberwolves/files/gettyimages-1231271242_1.jpg" alt="Basketball"></p>
+    </div>
+    <div id="column2">
+        <p>Fall 2023 Schedule:</p>
+        <ol>
+        <li>ITP 104</li>
+        <li>Econ 205</li>
+        <li>Soci 235</li>
+        <li>MS 201</li>
+        <li>EALC 122</li>
+        </ol>
+    </div>
+</div>
 
-<P>Favorite Website:<a href="https://www.espn.com/">ESPN</a></P>
-
-<p>Favorite Activity:</p>
-   <p> <img src="https://cdn.nba.com/teams/legacy/www.nba.com/timberwolves/sites/timberwolves/files/gettyimages-1231271242_1.jpg" alt="Basketball"></p>
-<p>Fall 2023 Schedule:</p>
-<ol>
-<li>ITP 104</li>
-<li>Econ 205</li>
-<li>Soci 235</li>
-<li>MS 201</li>
-<li>EALC 122</li>
-</ol>
-<p>Completed Assignments</p>
-<ol>
- <li><a href="assignment_01/assignment.html">Assignment 1</a></li>
- <li><a href="assignment_02/assignment_02.html">Assignment 2</a></li>
- <li><a href="assignment_03/assignment_03.html">Assignment 3</a></li>
- <li><a href="assignment_04/assignment_04.html">Assignment 4</a></li>
- <li><a href="assignment_05/assignment_05.html">Assignment 5</a></li>
- <li><a href="assignment_06/assignment_06.html">Assignment 6</a></li>
-
- 
- 
- 
+<div id="section3">
+    <div id="column3">
+        <p>Completed Assignments</p>
+        <ol>
+            <li><a href="assignment_01/assignment.html">Assignment 1</a></li>
+            <li><a href="assignment_02/assignment_02.html">Assignment 2</a></li>
+            <li><a href="assignment_03/assignment_03.html">Assignment 3</a></li>
+            <li><a href="assignment_04/assignment_04.html">Assignment 4</a></li>
+            <li><a href="assignment_05/assignment_05.html">Assignment 5</a></li>
+            <li><a href="assignment_06/assignment_06.html">Assignment 6</a></li>
 
    
-</ol>
-<p>Completed Labs</p>
-<ol>
-    <li><a href="index.html">Lab 2</a></li>
-    <li><a href="lab_03/assignment copy.html">Lab 3</a></li>
-    <li><a href="lab_4/lab_4.html">Lab 4</a></li>   
-    <li><a href="lab_5/lab5.html">Lab 5</a></li>
-    <li><a href="lab_6/lab_6.html">Lab 6</a></li>
-    <li><a href="lab_7/lab_07.html">Lab 7</a></li>
-
-</ol>
-
-
+        </ol>
+    </div>    
+    <div id="column4">
+        <p>Completed Labs</p>
+        <ol>
+            <li><a href="index.html">Lab 2</a></li>
+            <li><a href="lab_03/assignment copy.html">Lab 3</a></li>
+            <li><a href="lab_4/lab_4.html">Lab 4</a></li>   
+            <li><a href="lab_5/lab5.html">Lab 5</a></li>
+            <li><a href="lab_6/lab_6.html">Lab 6</a></li>
+            <li><a href="lab_7/lab_07.html">Lab 7</a></li>
+        </ol>
+    </div>
+</div>
+</div>
 </body>
 </html>
 
