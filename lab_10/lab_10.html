@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+    <title> Lab 10</title>
+
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        h1{
+            text-align: center;
+            color: darkgreen;
+        }
+        .imgbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px
+        }
+        .img{
+            position: absolute;
+            width: auto;
+            height: 200px;
+            transition: all 3s ease;
+        }
+
+
+        #pic1 {
+            height: 200px;
+            width: auto;
+            left:0;
+            
+        }
+
+        #pic2 {
+            left:25%;
+            height: 200px;
+            width: auto;
+            transition: all 4s ease;
+        }
+        #pic3 {
+            left:50%;
+            height: 200px;
+            width: auto;
+            transition: all 4s ease;
+        }
+
+        .imgbox:hover #pic2{
+            transform: translateY(200px);
+            transition: all 4s ease;
+        }
+        
+        .imgbox:hover #pic3{
+            transform: translateY(400px);
+            transition: all 4s ease;
+        }
+    
+
+        
+    </style>
+
+    </head>
+
+<body>
+    <h1><strong>Rudy Gobert!!!</strong></h1>
+<div class="imgbox">
+    <div class="img"><img id="pic1" src="imgs/ball.png" alt="Rudy Gobert with Ball"></div>
+    <div class="img"><img id="pic2" src="imgs/booker.png" alt="Rudy Gobert Blocking Devin Booker"></div>
+    <div class="img"><img id="pic3" src="imgs/spur.jpg" alt="Rudy Gobert Dunking"></div>
+</div>
+
+</body>
+
+</html>
