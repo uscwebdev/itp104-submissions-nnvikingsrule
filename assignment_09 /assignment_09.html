@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Sports Cards Collection</title>
+
+
+    <meta charset="utf-8">
+	<meta name="keywords" content="Sports Cards, Minnesota, Rookies">
+	<meta name="description" content="This website is an interactive online sports card collection, with a wide vareity of cards from High End to Rookies to Fun Unique Cards">
+	<meta name="viewport" content="width=device-width, initial-scale-1">
+
+    <link rel="stylesheet" href="external.css">
+
+    <style>
+
+        body{
+            background-color: gray;
+        }
+        #main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 10px;
+
+        }
+
+        #intro {
+            width: 500px;
+            height: 150px;
+            background-color: white;
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        #intro p {
+            padding-left: 10px;
+            text-align: center;
+        }
+
+        #details{
+            width: 500px;
+            height: 150px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .mainpic{
+            width: 300px;
+            height: 450px;
+            border: 1px solid black;
+        }
+
+        .maintext{
+            padding-bottom: 10px;
+            padding-top: 10px;
+            font-size: 1.5em;
+        }
+
+        .maintext2{
+            padding-bottom: 5px;
+        }
+
+        #hec{
+            width: 500px;
+            text-align: center;
+            background-color: white;
+            border: 1px solid black;
+            padding-bottom: 15px;
+            
+        }
+        
+        #r{
+            width: 500px;
+            text-align: center;
+            background-color: white;
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            padding-bottom: 15px;
+        }
+       
+        #osc{
+            width: 500px;
+            text-align: center;
+            background-color: white;
+            border: 1px solid black;
+            border-top: 0px;
+            padding-bottom: 15px;
+        }
+
+        #fc{
+            width: 500px;
+            text-align: center;
+            background-color: white;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            padding-bottom: 15px;
+            
+        }
+        
+        #hec:hover {
+            background-color: lightgray;
+        }
+
+        #r:hover {
+            background-color: lightgray;
+        }
+
+        #osc:hover {
+            background-color: lightgray;
+        }
+
+        #fc:hover {
+            background-color: lightgray;
+        }
+
+        #htvdiv{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 25px;
+        }
+
+        #scc {
+            background-color: white;
+            width: 1000px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        #htvdiv p {
+            text-align: center;
+            transition: all 2s;
+			max-height: 0px;
+			overflow: hidden;
+            font-size: 1.25em;
+            background-color: lightblue;
+            margin-bottom: 0px;
+        }
+
+        #htvdiv h4:hover + p {
+            max-height: 200px;
+        }
+
+        h4 {
+            width: 1000px;
+            font-size: 1.25em;
+            text-align: center;
+        }
+
+        #howtovideo {
+           border: 1px solid black;
+           width: 1000px;
+           height: 500px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div id="header">
+        <h1>Sports Cards Collection</h1>
+    </div>
+    
+    <div id="menu-nav">
+        <ul id="mainmenu"> 
+            <div id="hover1"> 
+                <a href="assignment_09.html" id="paragraph" >≡ Main Menu</a>
+                    <li><a href ="HighEndCards.html">High-End Cards</a></li>
+                    <li><a href ="Rookies.html">Rookies</a></li>
+                    <li><a href ="OldSchoolCards.html">Old School Cards</a></li>
+                    <li><a href ="FunCards.html">Fun Cards</a></li>
+            </div>
+        </ul>
+    </div>
+    
+     <div id="main">
+            <div id="intro">
+                <h2><strong>About:</strong></h2>
+                <p>This Sports Card collection holds a wide variety of sports card ranging from Expensive to Old to Unique to Funny! This collection will display both sides of the cards (when hovering), as well as the details such as year, variety, and numbering.   </p>
+            </div>
+
+            <div id="details">
+                <h2>Details:</h2>
+                <ul>
+                    <li><strong>High-End Cards</strong>: Estimated $100 and over</li>
+                    <li><strong>Rookies</strong>: Rookie Cards</li>
+                    <li><strong>Old-School Cards</strong>: 2010 - older cards</li>
+                    <li><strong>Fun Cards</strong>: Cards of players that were bad</li>
+                </ul>
+            </div>
+
+            <div id="hec">
+                <div class="maintext"><strong>High-End Cards</strong> </div>
+                <div class="maintext2"><strong><a href="HighEndCards.html">View All</a> </strong> </div>
+                <img class="mainpic" src="pics/PaulR.png" alt="Chris Paul Rookie Card">
+            </div>
+
+            <div id="r">
+                <div class="maintext"><strong>Rookies</strong></div>
+                <div class="maintext2"><strong><a href="Rookies.html">View All</a></strong> </div>
+                 <img class="mainpic" src="pics/JadenOR.png" alt="Jaden Mcdaniels Orange Rookie Card"> 
+            </div>
+
+            <div id="osc">
+                <div class="maintext"><strong>Old School Cards</strong></div>
+                <div class="maintext2"><strong><a href="OldSchoolCards.html">View All</a></strong> </div>
+                 <img class="mainpic" src="pics/LoveR.png" alt="Kevin Love Rookie"> 
+            </div>
+
+            <div id="fc">
+                <div class="maintext"><strong>Fun Cards</strong></div> 
+                <div class="maintext2"><strong><a href="FunCards.html">View All</a></strong> </div>
+                <img class="mainpic" src="pics/JakeG.png" alt="Jake Layman Genesis"> 
+            </div>
+
+    </div>
+    
+    <div id="htvdiv">
+        <div id="scc"><h4><strong>Sports Card Collecting Information Below:</strong></h3>
+        <p>For those not not well knowledgable in this hobby, watch the video below to learn more from one of the Sports Card Icons, Packman!</p>
+        </div>
+       
+        <div> <iframe id="howtovideo" src="https://www.youtube.com/embed/cmJz8Zyxqag?si=k_ZrAebkCzwNnytW" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div></div>
+        
+       
+
+
+    
+    
+    <div id="bottom">
+        <p>Contact: If interested in anything, Please reach out to: <a href="mailto:nikolain@usc.edu">nikolain@usc.edu</a></p>
+    </div>
+
+</body>
+
+</html>

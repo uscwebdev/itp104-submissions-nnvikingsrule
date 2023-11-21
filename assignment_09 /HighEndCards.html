@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Sports Cards Collection</title>
+
+
+    <meta charset="utf-8">
+	<meta name="keywords" content="Sports Cards, Minnesota, Rookies, High End">
+	<meta name="description" content="This website page one of an interactive online sports card collection. This page will display images of High End Sports Cards, as well as information about each card">
+	<meta name="viewport" content="width=device-width, initial-scale-1">
+
+    <link rel="stylesheet" href="external.css">
+
+    <style>
+
+        body{
+            background-color: white;
+        }
+
+        #main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #info {
+            width: 600px;
+            background-color: lightgray;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        #details {
+            width: 600px;
+            background-color: lightgray;
+            text-align: center;
+            border: 1px solid black;
+            border-left: 0px;
+        }
+
+        .card{
+            width: 600px;
+            height: 500px;
+            background-color: lightgray;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card1 {
+            width: 600px;
+            height: 500px;
+            background-color: lightgray;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .gradedpic {
+            width: 300px;
+            height: 450px;
+            border: 1px solid black;
+            margin-left: 10px;
+        }
+
+        .title{
+            width: 600px;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 1.25em;
+        }
+
+        .description {
+            width: 210px;
+            text-align: center;
+            height: 150px;
+        }
+
+        .description li {
+            margin-top: 5px;
+        }
+
+        .gif {
+            width: 250px;
+            height: 250px;
+            margin-left: 20px;      
+        }
+
+        .vertpic{
+            width: 300px;
+            height: 400px;
+            border: 1px solid black;
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>High End Cards</h1>
+    </div>
+
+    <div id="menu-nav">
+        <ul id="mainmenu"> 
+            <div id="hover1"> 
+                <a href="assignment_09.html" id="paragraph" >≡ Main Menu</a>
+                    <li><a href ="HighEndCards.html">High-End Cards</a></li>
+                    <li><a href ="Rookies.html">Rookies</a></li>
+                    <li><a href ="OldSchoolCards.html">Old School Cards</a></li>
+                    <li><a href ="FunCards.html">Fun Cards</a></li>
+            </div>
+        </ul>
+    </div>
+
+    <div id="main">
+        <div id="info">
+            <h2>High End Cards:</h2>
+            <p>This section contains the most prized cards in this collection, ranging from Hall of Famers to Current Superstars to Future Hall of Famers! All of these cards hold a value of more than $100, making them collectors items. </p>
+        </div>
+
+        <div id="details">
+            <h2>Legend</h2>
+            <ul>
+                <li><strong>Type:</strong>What card set is it from </li>
+                <li><strong>Graded:</strong> On a Scale to 1-10, how perfect is the condition</li>
+                <li><strong>Estimated Price:</strong> If sold, how much would it approximately sell for </li>
+                <li><strong>Year:</strong> The year the card was created</li>
+                <li><strong>#:</strong> What the serial number is, ex: 115/299</li>
+                <li><strong>Parallel:</strong> What the color/design of the card is</li>
+
+            </ul>
+        </div>
+
+        <div class="card">
+            <p class="title"><strong>Chris Paul Topps Chrome Rookie Card</strong></p>
+            <img class="gradedpic" src="pics/PaulR.png" alt="Chris Paul Rookie Card">
+            <div>
+                <ul class="description">
+                    <li><strong>Type:</strong> Topps Chrome</li>
+                    <li><strong>Graded:</strong> PSA 8</li>
+                    <li><strong>Estimated Price:</strong> $100-150</li>
+                    <li><strong>Year:</strong> 2005-2006</li>
+                    <li><strong>#:</strong> 118/999</li>
+                    <li><strong>Parallel:</strong> Refractor</li>
+                </ul>
+                <img class="gif" src="gifs/chrispaul.gif" alt="Chris Paul gif">
+            </div>
+        
+        </div>
+
+        <div class="card1">
+            <p class="title"> <strong>Anthony Davis Select Rookie Patch Auto</strong> </p>
+            <img class="gradedpic" src="pics/HighEnd/Davisfront.png" alt= "Anthony Davis Select Rookie Patch Auto" >
+            <div>
+                <ul class="description">
+                    <li><strong>Type:</strong> Select</li>
+                    <li><strong>Graded:</strong> BGS 9.5 </li>
+                    <li><strong>Estimated Price:</strong> $200-$300</li>
+                    <li><strong>Year:</strong> 2012-2013 </li>
+                    <li><strong>#:</strong> 085/149</li>
+                    <li><strong>Parallel:</strong> Base</li>
+                </ul>
+                <img class="gif" src="gifs/davis.gif" alt="Anthony Davis Gif">
+            </div>
+        </div>
+
+        <div class="card">
+            <p class="title"> <strong>Rudy Gobert Select Green Rookie Card</strong> </p>
+            <img class="gradedpic" src="pics/HighEnd/Gobertfront.png" alt="Rudy Gobert Select Green Rookie Card" >
+            <div>
+                <ul class="description">
+                    <li><strong>Type:</strong> Select</li>
+                    <li><strong>Graded:</strong> PSA 6</li>
+                    <li><strong>Estimated Price: </strong> $150-$200</li>
+                    <li><strong>Year:</strong> 2013-2014</li>
+                    <li><strong>#:</strong> 4/5 </li>
+                    <li><strong>Parallel:</strong> Green</li>
+                </ul>
+                <img class="gif" src="gifs/gobert.gif" alt="Rudy Gobert Gif">
+            </div>
+        </div>
+
+        <div class="card1">
+            <p class="title"> <strong>Karl Anthony Towns Select Red Rookie Card</strong> </p>
+            <img class="gradedpic" src="pics/HighEnd/KATfront.png" alt="Karl Anthony Towns Select Red Rookie Card" >
+            <div>
+                <ul class="description">
+                    <li><strong>Type:</strong> Select</li>
+                    <li><strong>Graded:</strong> PSA 10</li>
+                    <li><strong>Estimated Price:</strong> $150-$250</li>
+                    <li><strong>Year:</strong> 2015</li>
+                    <li><strong>#:</strong> 017/149</li>
+                    <li><strong>Parallel:</strong> Red</li>
+                </ul>
+                <img class="gif" src="gifs/kat.gif" alt="Karl Anthony Towns Gif">
+            </div>
+        </div>
+
+        <div class="card">
+            <p class="title"> <strong>Rudy Gobert National Treasure True Rookie Patch Auto</strong> </p>
+            <img class="vertpic" src="pics/HighEnd/gobertfront2.png" alt="Rudy Gobert National Treasure Rookie Patch Auto" >
+            <div>
+                <ul class="description">
+                    <li><strong>Type: </strong> National Treasures </li>
+                    <li><strong>Graded:</strong> N/A</li>
+                    <li><strong>Estimated Price:</strong> $500</li>
+                    <li><strong>Year:</strong> 2013-2014</li>
+                    <li><strong>#:</strong> 06/25</li>
+                    <li><strong>Parallel:</strong> Gold Proof</li>
+                </ul>
+                <img class="gif" src="gifs/gobert2.gif" alt="Rudy Gobert Gif">
+            </div>
+        </div>
+
+        <div class="card1">
+            <p class="title"> <strong>Karl Anthony Towns National Treasure Rookie Patch Auto</strong> </p>
+            <img class="vertpic" src="pics/HighEnd/KATfront2.png" alt="Karl Anthony Towns National Treasure Rookie Patch Auto" >
+            <div>
+                <ul class="description">
+                    <li><strong>Type:</strong> National Treasure</li>
+                    <li><strong>Graded:</strong> N/A</li>
+                    <li><strong>Estimated Price:</strong> $100-$200</li>
+                    <li><strong>Year:</strong> 2015-2016</li>
+                    <li><strong>#:</strong> 75/99</li>
+                    <li><strong>Parallel:</strong> Material Treasures</li>
+                </ul>
+                <img class="gif" src="gifs/kat2.gif" alt="Karl Anthony Towns Gif">
+            </div>
+        </div>
+
+        <div class="card">
+            <p class="title"> <strong>Rudy Gobert Gold Rookie Prizm Auto</strong></p>
+            <img class="vertpic" src="pics/HighEnd/Gobertfront3.png" alt="Rudy Gobert Gold Rookie Prizm Auto" >
+            <div>
+                <ul class="description">
+                    <li><strong>Type: </strong> Prizm</li>
+                    <li><strong>Graded: </strong> N/A</li>
+                    <li><strong>Estimated Price:</strong> $1000</li>
+                    <li><strong>Year:</strong> 2013-2014</li>
+                    <li><strong>#:</strong> 06/10</li>
+                    <li><strong>Parallel:</strong> Gold</li>
+                </ul>
+                <img class="gif" src="gifs/gobert3.gif" alt="Rudy Gobert Gif">
+            </div>
+        </div>
+
+        <div class="card1">
+            <p class="title"> <strong>Rudy Gobert Silver Rookie Prizm Auto</strong></p>
+            <img class="vertpic" src="pics/HighEnd/Gobertfront4.png" alt="" >
+            <div>
+                <ul class="description">
+                    <li><strong>Type:</strong> Prizm</li>
+                    <li><strong>Graded:</strong> N/A</li>
+                    <li><strong>Estimated Price:</strong> $500</li>
+                    <li><strong>Year:</strong> 2013-2014</li>
+                    <li><strong>#:</strong> 07/25</li>
+                    <li><strong>Parallel:</strong> Silver</li>
+                </ul>
+                <img class="gif" src="gifs/gobert4.gif" alt="Rudy Gobert Gif">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="bottom">
+        <p>Contact: If interested in anything, Please reach out to: <a href="mailto:nikolain@usc.edu">nikolain@usc.edu</a></p>
+    </div>
+
+
+</body>
+
+</html>
+
