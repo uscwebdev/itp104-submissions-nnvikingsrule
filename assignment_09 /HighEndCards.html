@@ -7,7 +7,7 @@
 
     <meta charset="utf-8">
 	<meta name="keywords" content="Sports Cards, Minnesota, Rookies, High End">
-	<meta name="description" content="This website page one of an interactive online sports card collection. This page will display images of High End Sports Cards, as well as information about each card">
+	<meta name="description" content="This website is page one of an interactive online sports card collection. This page will display images of High End Sports Cards, as well as information about each card">
 	<meta name="viewport" content="width=device-width, initial-scale-1">
 
     <link rel="stylesheet" href="external.css">
@@ -24,81 +24,98 @@
             justify-content: center;
         }
 
-        #info {
-            width: 600px;
-            background-color: lightgray;
-            text-align: center;
-            border: 1px solid black;
-        }
-
         h2{
             text-align: center;
         }
 
-        #details {
-            width: 600px;
-            background-color: lightgray;
-            text-align: center;
-            border: 1px solid black;
-            border-left: 0px;
+        #cpfront {
+            transition: opacity 1s ease;
         }
 
-        .card{
-            width: 600px;
-            height: 500px;
-            background-color: lightgray;
-            border-left: 1px solid black;
-            border-bottom: 1px solid black;
-            border-right: 1px solid black;
-            display: flex;
-            flex-wrap: wrap;
+        #adfront {
+            transition: opacity 1s ease;
         }
 
-        .card1 {
-            width: 600px;
-            height: 500px;
-            background-color: lightgray;
-            border-right: 1px solid black;
-            border-bottom: 1px solid black;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .gradedpic {
-            width: 300px;
-            height: 450px;
-            border: 1px solid black;
-            margin-left: 10px;
+        #rg1front {
+            transition: opacity 1s ease;
         }
 
-        .title{
-            width: 600px;
-            text-align: center;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            font-size: 1.25em;
+        #kat1front {
+            transition: opacity 1s ease;
         }
 
-        .description {
-            width: 210px;
-            text-align: center;
-            height: 150px;
+        #rg2front {
+            transition: opacity 1s ease;
         }
 
-        .description li {
-            margin-top: 5px;
+        #kat2front {
+            transition: opacity 1s ease;
         }
 
-        .gif {
-            width: 250px;
-            height: 250px;
-            margin-left: 20px;      
+        #rg3front {
+            transition: opacity 1s ease;
         }
 
-        .vertpic{
-            width: 300px;
-            height: 400px;
-            border: 1px solid black;
-            margin-left: 10px;
+        #rg4front {
+            transition: opacity 1s ease;
+        }
+
+        #rg5front {
+            transition: opacity 1s ease;
+        }
+
+        #klkgfront {
+            transition: opacity 1s ease;
+        }
+
+        #cpfront:hover {
+        transition: opacity 1s ease;
+        opacity: 0;
+        }
+
+        #adfront:hover {
+        transition: opacity 1s ease;
+        opacity: 0;
+        }
+
+        #rg1front:hover {
+        transition: opacity 1s ease;
+        opacity: 0;
+        }
+
+        #kat1front:hover {
+        transition: opacity 1s ease;
+        opacity: 0;
+        }
+
+        #rg2front:hover {
+        transition: opacity 1s ease;
+        opacity: 0;
+        }
+
+        #kat2front:hover {
+            transition: opacity 1s ease;
+            opacity: 0;
+        }
+
+        #rg3front:hover {
+            transition: opacity 1s ease;
+            opacity: 0;
+        }
+
+        #rg4front:hover {
+            transition: opacity 1s ease;
+            opacity: 0;
+        }
+        
+        #rg5front:hover {
+            transition: opacity 1s ease;
+            opacity: 0;
+        }
+
+        #klkgfront:hover {
+            transition: opacity 1s ease;
+            opacity: 0;
         }
 
     </style>
@@ -131,7 +148,7 @@
         <div id="details">
             <h2>Legend</h2>
             <ul>
-                <li><strong>Type:</strong>What card set is it from </li>
+                <li><strong>Type:</strong> What card set is it from </li>
                 <li><strong>Graded:</strong> On a Scale to 1-10, how perfect is the condition</li>
                 <li><strong>Estimated Price:</strong> If sold, how much would it approximately sell for </li>
                 <li><strong>Year:</strong> The year the card was created</li>
@@ -141,9 +158,12 @@
             </ul>
         </div>
 
-        <div class="card">
+        <div class="card" id="cpcard">
             <p class="title"><strong>Chris Paul Topps Chrome Rookie Card</strong></p>
-            <img class="gradedpic" src="pics/PaulR.png" alt="Chris Paul Rookie Card">
+            <div class="imgholder">
+                <img class="gradedpic" id="cpfront" src="pics/PaulR.png" alt="Chris Paul Rookie Card">
+                <img class="cardback" src="pics/HighEnd/Paulback.png" alt="Chris Paul Rookie Card Back">
+            </div>
             <div>
                 <ul class="description">
                     <li><strong>Type:</strong> Topps Chrome</li>
@@ -160,7 +180,10 @@
 
         <div class="card1">
             <p class="title"> <strong>Anthony Davis Select Rookie Patch Auto</strong> </p>
-            <img class="gradedpic" src="pics/HighEnd/Davisfront.png" alt= "Anthony Davis Select Rookie Patch Auto" >
+            <div class="imgholder">
+            <img class="gradedpic" id="adfront" src="pics/HighEnd/Davisfront.png" alt= "Anthony Davis Select Rookie Patch Auto" >
+            <img class="cardback" src="pics/HighEnd/Davisback.png" alt= "Anthony Davis Select Rookie Patch Auto Back" >
+            </div>
             <div>
                 <ul class="description">
                     <li><strong>Type:</strong> Select</li>
@@ -176,7 +199,10 @@
 
         <div class="card">
             <p class="title"> <strong>Rudy Gobert Select Green Rookie Card</strong> </p>
-            <img class="gradedpic" src="pics/HighEnd/Gobertfront.png" alt="Rudy Gobert Select Green Rookie Card" >
+            <div class="imgholder">
+            <img class="gradedpic" id="rg1front" src="pics/HighEnd/Gobertfront.png" alt="Rudy Gobert Select Green Rookie Card" >
+            <img class="cardback" src="pics/HighEnd/Gobertback.png" alt= "Rudy Gobert Select Green Rookie Card Back" >
+            </div>
             <div>
                 <ul class="description">
                     <li><strong>Type:</strong> Select</li>
@@ -184,7 +210,7 @@
                     <li><strong>Estimated Price: </strong> $150-$200</li>
                     <li><strong>Year:</strong> 2013-2014</li>
                     <li><strong>#:</strong> 4/5 </li>
-                    <li><strong>Parallel:</strong> Green</li>
+                    <li><strong>Parallel:</strong> <span class="green"> Green</span></li>
                 </ul>
                 <img class="gif" src="gifs/gobert.gif" alt="Rudy Gobert Gif">
             </div>
@@ -192,15 +218,18 @@
 
         <div class="card1">
             <p class="title"> <strong>Karl Anthony Towns Select Red Rookie Card</strong> </p>
-            <img class="gradedpic" src="pics/HighEnd/KATfront.png" alt="Karl Anthony Towns Select Red Rookie Card" >
+            <div class="imgholder">
+            <img class="gradedpic" id="kat1front" src="pics/HighEnd/KATfront.png" alt="Karl Anthony Towns Select Red Rookie Card" >
+            <img class="cardback" src="pics/HighEnd/KATback.png" alt= "Karl Anthony Towns Select Red Rookie Card Back" >
+            </div>
             <div>
                 <ul class="description">
                     <li><strong>Type:</strong> Select</li>
                     <li><strong>Graded:</strong> PSA 10</li>
-                    <li><strong>Estimated Price:</strong> $150-$250</li>
+                    <li><strong>Estimated Price:</strong> $100</li>
                     <li><strong>Year:</strong> 2015</li>
                     <li><strong>#:</strong> 017/149</li>
-                    <li><strong>Parallel:</strong> Red</li>
+                    <li><strong>Parallel:</strong> <span class="red">Red</span></li>
                 </ul>
                 <img class="gif" src="gifs/kat.gif" alt="Karl Anthony Towns Gif">
             </div>
@@ -208,7 +237,10 @@
 
         <div class="card">
             <p class="title"> <strong>Rudy Gobert National Treasure True Rookie Patch Auto</strong> </p>
-            <img class="vertpic" src="pics/HighEnd/gobertfront2.png" alt="Rudy Gobert National Treasure Rookie Patch Auto" >
+            <div class="imgholder">
+            <img class="vertpic" id="rg2front" src="pics/HighEnd/gobertfront2.png" alt="Rudy Gobert National Treasure Rookie Patch Auto" >
+            <img class="cardback2" src="pics/HighEnd/gobertback2.png" alt="Rudy Gobert National Treasure Rookie Patch Auto Back" >
+            </div>
             <div>
                 <ul class="description">
                     <li><strong>Type: </strong> National Treasures </li>
@@ -216,7 +248,7 @@
                     <li><strong>Estimated Price:</strong> $500</li>
                     <li><strong>Year:</strong> 2013-2014</li>
                     <li><strong>#:</strong> 06/25</li>
-                    <li><strong>Parallel:</strong> Gold Proof</li>
+                    <li><strong>Parallel:</strong> <span class="gold">Gold Proof</span></li>
                 </ul>
                 <img class="gif" src="gifs/gobert2.gif" alt="Rudy Gobert Gif">
             </div>
@@ -224,7 +256,10 @@
 
         <div class="card1">
             <p class="title"> <strong>Karl Anthony Towns National Treasure Rookie Patch Auto</strong> </p>
-            <img class="vertpic" src="pics/HighEnd/KATfront2.png" alt="Karl Anthony Towns National Treasure Rookie Patch Auto" >
+            <div class="imgholder">
+            <img class="vertpic" id="kat2front" src="pics/HighEnd/KATfront2.png" alt="Karl Anthony Towns National Treasure Rookie Patch Auto" >
+            <img class="cardback2" src="pics/HighEnd/KATback2.png" alt="Karl Anthony Towns National Treasure Rookie Patch Auto back" >
+            </div>
             <div>
                 <ul class="description">
                     <li><strong>Type:</strong> National Treasure</li>
@@ -240,7 +275,10 @@
 
         <div class="card">
             <p class="title"> <strong>Rudy Gobert Gold Rookie Prizm Auto</strong></p>
-            <img class="vertpic" src="pics/HighEnd/Gobertfront3.png" alt="Rudy Gobert Gold Rookie Prizm Auto" >
+            <div class="imgholder">
+            <img class="vertpic" id="rg3front" src="pics/HighEnd/Gobertfront3.png" alt="Rudy Gobert Gold Rookie Prizm Auto" >
+            <img class="cardback2" src="pics/HighEnd/Gobertback3.png" alt="Rudy Gobert Gold Rookie Prizm Auto Back" >
+            </div>
             <div>
                 <ul class="description">
                     <li><strong>Type: </strong> Prizm</li>
@@ -248,7 +286,7 @@
                     <li><strong>Estimated Price:</strong> $1000</li>
                     <li><strong>Year:</strong> 2013-2014</li>
                     <li><strong>#:</strong> 06/10</li>
-                    <li><strong>Parallel:</strong> Gold</li>
+                    <li><strong>Parallel:</strong> <span class="gold">Gold</span></li>
                 </ul>
                 <img class="gif" src="gifs/gobert3.gif" alt="Rudy Gobert Gif">
             </div>
@@ -256,7 +294,10 @@
 
         <div class="card1">
             <p class="title"> <strong>Rudy Gobert Silver Rookie Prizm Auto</strong></p>
-            <img class="vertpic" src="pics/HighEnd/Gobertfront4.png" alt="" >
+            <div class="imgholder">
+            <img class="vertpic" id="rg4front" src="pics/HighEnd/Gobertfront4.png" alt="Rudy Gobert Silver Rookie Prizm Auto" >
+            <img class="cardback2" src="pics/HighEnd/Gobertback4.png" alt="Rudy Gobert Silver Rookie Prizm Auto Back" >
+            </div>
             <div>
                 <ul class="description">
                     <li><strong>Type:</strong> Prizm</li>
@@ -270,12 +311,50 @@
             </div>
         </div>
 
+        <div class="card">
+            <p class="title"> <strong>Rudy Gobert Select Gold Rookie Patch Auto</strong></p>
+            <div class="imgholder">
+                <img class="horzpic" id="rg5front" src="pics/HighEnd/rudyhorzfront.png" alt="Rudy Gobert Select Gold Rookie Patch Auto Front">
+                <img class="horzcardback"  src="pics/HighEnd/goberthorzback.png" alt="Rudy Gobert Select Gold Rookie Patch Auto Back" >
+            </div>
+            <div>
+                <ul class="description2" >
+                    <li><strong>Type:</strong> Select</li>
+                    <li><strong>Graded:</strong> N/A</li>
+                    <li><strong>Estimated Price:</strong> $150</li>
+                    <li><strong>Year:</strong> 2013-2014</li>
+                    <li><strong>#:</strong> 10/10</li>
+                    <li><strong>Parallel:</strong><span class="gold"> Gold</span> </li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <div class="card1" >
+            <p class="title"><strong>Kevin Love and Kevin Garnett Dual Patch Auto</strong></p>
+            <div class="imgholder">
+                <img class="horzpic" id="klkgfront" src="pics/HighEnd/kg:kl-front.png" alt="Kevin Love and Kevin Garnett Dual Patch Auto Front">
+                <img class="horzcardback" src="pics/HighEnd/kg-klback.png" alt="Kevin Love and Kevin Garnett Dual Patch Auto Front">
+            </div>
+            <div>
+                <ul class="description2">
+                    <li><strong>Type:</strong> Upper Deck</li>
+                    <li><strong>Graded:</strong> N/A</li>
+                    <li><strong>Estimated Price:</strong> $200</li>
+                    <li><strong>Year:</strong> 2008-2009</li>
+                    <li><strong>#:</strong> 06/10</li>
+                    <li><strong>Parallel:</strong> N/A</li>
+                </ul>
+            </div>
+        </div>
+
+
+
     </div>
 
     <div id="bottom">
         <p>Contact: If interested in anything, Please reach out to: <a href="mailto:nikolain@usc.edu">nikolain@usc.edu</a></p>
     </div>
-
 
 </body>
 

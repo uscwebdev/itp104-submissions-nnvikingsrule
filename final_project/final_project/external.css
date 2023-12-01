@@ -1,0 +1,240 @@
+body {
+    margin: 0px;
+}
+#header{
+    text-align: center;
+    height: 300px;
+    width: auto;
+    background-image: url(pics/header.jpg);
+    background-position: 50%;
+    background-size:cover;
+    line-height: 275px;
+    text-shadow: 2px 2px 4px white;
+    margin-top: 0px;
+    
+}
+h1{
+    margin-top: 0px;
+}
+
+#mainmenu{
+    height: 50px;
+    width: auto;
+    background-color: black;
+    color: white;
+    text-align: left;
+    line-height: 50px;
+    border: 1px solid white;
+    background-color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    z-index: 9999;
+    list-style: none;
+}
+
+#mainmenu li {
+    position: relative;
+    width:150px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    visibility: hidden;   
+
+}
+
+#mainmenu:hover li{
+visibility: visible;
+}
+
+#paragraph {
+    margin: 0px;
+    visibility: visible; 
+}
+
+#hover1 ul {
+    width: 150px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#hover1 ul li {
+    width: 150px;
+}
+
+
+#bottom{
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    width: auto;
+    margin-top: 20px;
+}
+
+#bottom p {
+    font-size: .85em;
+    text-align: center;
+}
+
+.green {
+    color: green;
+}
+
+.red{
+    color: red;
+}
+
+.gold {
+    color: goldenrod;
+}
+
+.orange {
+    color: rgb(204, 134, 3);
+}
+
+.lightblue {
+    color: rgb(109, 195, 224);
+}
+
+.neongreen {
+    color: rgb(150, 214, 54);
+}
+
+.purple {
+    color: purple;
+}
+
+#info {
+    width: 600px;
+    background-color: lightgray;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#details {
+    width: 600px;
+    background-color: lightgray;
+    text-align: center;
+    border: 1px solid black;
+    border-left: 0px;
+}
+
+.card{
+    width: 600px;
+    height: 500px;
+    background-color: lightgray;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card1 {
+    width: 600px;
+    height: 500px;
+    background-color: lightgray;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.gradedpic {
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    margin-left: 10px;
+    z-index: 2;
+    position: relative;
+}
+
+.title{
+    width: 600px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.25em;
+}
+
+.description {
+    width: 210px;
+    text-align: center;
+    height: 150px;
+}
+
+.description li {
+    margin-top: 5px;
+}
+
+.gif {
+    width: 250px;
+    height: 250px;
+    margin-left: 20px;      
+}
+
+.imgholder {
+    position: relative;
+}
+
+.cardback {
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    right: 0px;
+    object-fit: cover;
+    z-index: 0;
+    border: 1px solid black;
+}
+
+.cardback2 {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    right: 0px;
+    object-fit: cover;
+    z-index: 0;
+    border: 1px solid black;
+}
+
+.vertpic{
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    margin-left: 10px;
+    z-index: 2;
+    position: relative;
+}
+
+.horzpic {
+    width: 450px;
+    height: 300px;
+    position: relative;
+    border: 1px solid black;
+    left: 74px;
+    z-index: 2;
+}
+
+.horzcardback {
+    width: 450px;
+    height: 300px;
+    border: 1px solid black;
+    position: absolute;
+    right: 0px;
+    object-fit: cover;
+    z-index: 0;
+    left: 74px;
+}
+
+.description2 {
+    width: 520px;
+    text-align: center;
+    height: 150px;
+    margin-top: 5px;
+}
+
+.description2 li {
+    margin-top: 5px;
+}
+
